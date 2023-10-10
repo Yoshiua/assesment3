@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav>
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	    </ol>
+	</nav>
+	<slot></slot>
+	<content>
+		<h1>Welcome to this little website</h1>
+		<!-- <p>Hello World</p> -->
+		<!-- was not sure if i was supposed to remove this but chose to. -->
+
+		<img id= "duckImg" alt= "duckImg" src="https://images.squarespace-cdn.com/content/v1/53208ff6e4b00fbb0f1c2d65/1640474605849-4AC8QGVMFM53Q2A1ZUY3/0B34F818-81BD-4EEC-90BF-A01F47B8AC57?format=1000w">
+		<p class="secondWelcome">You wont fing much use here but thanks for showing up</p>
+		<ul>
+			<li class="Compliment">You're so funny you could make the Mona lisa smile</li>
+			<li class="Compliment">You are really talented</li> 
+			<li class="Compliment">You're so sweet your like a corner piece of a brownie</li> 
+		</ul>
+
+		<h2>Contact Us</h2>
+		<form id="contact">
+			Your name:
+			<input type="text">
+
+			Message:
+			<input type="textarea">
+
+			How did you hear about us?
+		<div class="cb">
+				<input type="checkbox" id="Option1" value="Google">
+				<label for="Option1" style="word-wrap: break-word">Google</label><br>
+
+				<input type="checkbox" id="Option2" value="A Friend">
+				<label for="Option2"> A Friend</label><br>
+
+				<input type="checkbox" id="Option3" value="Other">
+				<label for="Option3">Other</label><br><br>
+			
+			<input type="submit">
+		</div>
+
+		</form>
+
+	</content>
+
+
+	<script src="about.js"></script>
+
+	
+
+</body>
+</html>
